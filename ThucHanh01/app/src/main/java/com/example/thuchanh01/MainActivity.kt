@@ -30,18 +30,25 @@ class MainActivity : AppCompatActivity() {
             }
              if (age > 65 && age <= 119){
                  Toast.makeText(this, "ban la nguoi cao tuoi", Toast.LENGTH_SHORT).show()
+                 return@setOnClickListener
             }
             if (age <= 65 && age >=6 ){
                 Toast.makeText(this, "ban la nguoi tre", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
             }
-            if (age > 2 && age < 6){
+            if (age > 2 && age < 6 && age > 0){
                 Toast.makeText(this, "CON NÍT RANH", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
             }
             if (age <=2 ){
                 Toast.makeText(this, "mới biết đi hả ", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+
             }
             else{
-                Toast.makeText(this, "UY TÍN HÔNG CHỨ GHI VÔ SÁCH ĐỎ ĐƯỢC RỒI ĐÓ:)))", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "UY TÍN HÔNG:)))", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+
             }
         }
     }
