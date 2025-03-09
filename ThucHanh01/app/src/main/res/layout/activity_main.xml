@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="THỰC HÀNH 01"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Khung nhập liệu -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#DDDDDD"
+        android:layout_marginBottom="20dp">
+
+        <!-- Nhập họ và tên -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+
+                android:text="Họ và tên"
+                android:layout_marginRight="19dp"/>
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:padding="8dp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Tuổi"
+                android:layout_marginRight="51dp"/>
+
+            <EditText
+                android:id="@+id/editAge"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:inputType="number"
+                android:padding="8dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!-- Nút Kiểm tra -->
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kiểm tra"
+        android:textColor="#FFFFFF"
+        android:background="#0C78EF"
+        android:padding="10dp"/>
+
+</LinearLayout>
